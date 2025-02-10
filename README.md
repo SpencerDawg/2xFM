@@ -7,5 +7,5 @@ Contact `dreitone` on discord for questions related to the mod, contributing, an
 > [!IMPORTANT]
 > This library is work in progress and not designed for general usage yet. 
 
-[^1]: J-8 has a private repository for now.
+[^1]: [JUPITER-8](https://github.com/SpencerDawg/Jupiter)
 [^2]: Be sure to make an issue before doing this if it relates to a bug in the library itself! I can see when you make them.
