@@ -1,10 +1,12 @@
-﻿using Terraria.ModLoader;
+﻿using Terraria;
+using Terraria.ModLoader;
 
-namespace TxFM;
+namespace TxFM {
 
-public class Class1
+public class Test
 {
-    static void Main() {
+    public static void TestMethod() {
         Console.Write("Testing");
     }
+}
 }
