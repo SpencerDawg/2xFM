@@ -12,13 +12,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-      <Target Name="CopyReferenceAssemblies" AfterTargets="Build">
-        <ItemGroup>
-            <ReferenceAssemblies Include="$(OutputPath)\$(ProjectName).dll"/>
-        </ItemGroup>
+  <Target Name="BuildMod" />
 
-        <Copy SourceFiles="@(ReferenceAssemblies)"
-              DestinationFolder=".."/>
-    </Target>
+  <Target Name="CopyReferenceAssemblies" AfterTargets="Build">
+    <ItemGroup>
+      <ReferenceAssemblies Include="$(OutputPath)\$(ProjectName).dll"/>
+  </ItemGroup>
+
+  <Copy SourceFiles="@(ReferenceAssemblies)"
+    DestinationFolder=".."/>
+  </Target>
 
 </Project>
