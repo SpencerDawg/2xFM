@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>TxFM</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+      <Target Name="CopyReferenceAssemblies" AfterTargets="Build">
+        <ItemGroup>
+            <ReferenceAssemblies Include="$(OutputPath)\$(ProjectName).dll"/>
+        </ItemGroup>
+
+        <Copy SourceFiles="@(ReferenceAssemblies)"
+              DestinationFolder=".."/>
+    </Target>
+
+</Project>
