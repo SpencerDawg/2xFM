@@ -1,4 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup> 
+		<TargetsPath Condition="'$(TargetsPath)' == ''">/home/coolbugs/.local/share/Terraria/tModLoader/ModSources/tModLoader.targets</TargetsPath>
+	</PropertyGroup>  
+
+	<Import Project="$(TargetsPath)" />
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>

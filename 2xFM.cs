@@ -1,4 +1,6 @@
-﻿namespace TxFM;
+﻿using Terraria.ModLoader;
+
+namespace TxFM;
 
 public class Class1
 {
